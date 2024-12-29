@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #333;
+  padding: 10px 20px;
+  position: fixed; /* Fix the navbar at the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ensure it spans the entire width */
+  z-index: 1000; /* Ensure it stays on top */
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space out items */
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex; /* Display items side by side */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-list li {
+  margin-right: 20px; /* Add space between the links */
+}
+
+.navbar-list a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar-list a:hover {
+  color: #f39c12; /* Change color on hover */
+}
+
+/* Style for search bar in navbar */
+.navbar .search-top {
+  display: flex; /* To control layout of input and other elements */
+  align-items: center; /* Vertically center the input */
+  margin-left: auto; /* Push it to the right */
+}
+
+.navbar .search-top input {
+  height: 36px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 200px; /* Adjust width as needed */
+}
+
+.navbar .search-top input:focus {
+  outline: none; /* Remove focus outline */
+}
+
+/* Centering container */
+body {
+  margin: 0;
+  background-color: #222;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.card,
+.weather {
+  background-color: aqua;
+  padding: 20px 10px 10px;
+  border-radius: 8px;
+  width: 50%;
+  /* min-width: max-content; */
+  max-width: 400px;
+  margin: auto; /* Automatically center the card horizontally and vertically */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.weather {
+  padding-top: 0px;
+}
+
+.search {
+  width: 100%;
+  background-color: rgb(131, 195, 225);
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search input {
+  height: 60px;
+  width: 100%;
+  margin: 5px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.search button {
+  height: 60px;
+  width: 60px;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+}
+
+.search img {
+  height: 20px;
+  width: 20px;
+}
+
+.history {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aquamarine;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 5px;
+}
+
+li {
+  cursor: pointer;
+}
+
+li button {
+  background-color: rgb(238, 121, 121);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 5px;
+  cursor: pointer;
+}
