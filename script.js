@@ -1,8 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  //   const url =
-  //     "https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}";
-  const API_KEY = "733d413366332dc2a94450166951a668";
-
   const cityInput = document.querySelector(".search input");
   const searchBtn = document.querySelector(".search button");
   const cityNameDisplay = document.querySelector(".city");
@@ -55,7 +51,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const showCityWeather = async (city) => {
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`;
     const response = await fetch(url);
     const data = await response.json();
     //   console.log(data);
